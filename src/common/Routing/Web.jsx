@@ -1,6 +1,8 @@
 export const webRoutes = {
-one:'pageone',
-two:'pagetwo',
-three:'pagethree',
-home:'/'
+home:'home',
+about:'about',
+login:'login',
+homepage:'/',
+main:""
+
 }

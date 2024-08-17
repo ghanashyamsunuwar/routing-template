@@ -1,0 +1,35 @@
+.main-div{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-div{
+    display: flex;
+}
+.sidebarsub-div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+.topbar-div{
+    background-color: red;
+    padding: 10px;
+}
+.sidebarmain{
+    padding: 10px;
+    cursor: pointer;
+    
+}
+.sidebarsub{
+    height: 0;
+    overflow: hidden;
+    background-color: rgb(49, 40, 40);
+}
+.sidebarmain.open .sidebarsub{
+    height: auto;
+}
+.sidebar-subitem{
+    padding: 10px;
+}

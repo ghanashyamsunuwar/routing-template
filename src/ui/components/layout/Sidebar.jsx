@@ -1,12 +1,18 @@
 import React from 'react'
-import {Link } from 'react-router-dom'
+import SidebarItem from './SidebarItem'
+import items from './sidebarItem.json'
 
 function Sidebar() {
+
+
+
   return (
-    <div>
-        <Link to={'pageone'}>Page One</Link>
-        <Link to={'pagetwo'}>Page two</Link>
-        <Link to={"pagethree"}>Page three</Link>
+    <div className='sidebarsub-div'>
+      {
+        items.map((item,index) => (
+          <SidebarItem item={item} key={index} />
+        ))
+      }
     </div>
   )
 }
